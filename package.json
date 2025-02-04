@@ -1,27 +1,42 @@
 {
-  "name": "pk-nest-lib",
+  "name": "pk-next-lib",
   "version": "0.1.0",
   "private": true,
+  "description":"A Library to support NextJS Single Server/Page Web apps",
+  "type": "module",
+  "module": "./dist/index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "tsc",
+    "next-build": "next build",
     "start": "next start",
+    "clean": "rm -rf ./dist ./node_modules package-lock.json && npm i && tsc",
     "lint": "next lint"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js",
+      "import": "./dist/index.js"
+    }
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.6"
+    "pk-ts-sqlite-lib": "github:pkirkaas/pk-ts-sqlite-lib#working",
+    "pk-ts-api-lib": "github:pkirkaas/pk-ts-api-lib#working",
+    "pk-ts-fe-lib": "github:pkirkaas/pk-ts-fe-lib#working",
+    "next": "*"
   },
   "devDependencies": {
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6",
-    "@eslint/eslintrc": "^3"
+    "postcss": "*",
+    "tailwindcss": "*",
+    "eslint": "*",
+    "eslint-config-next": "*",
+    "@eslint/eslintrc": "*"
   }
 }

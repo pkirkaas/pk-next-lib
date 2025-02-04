@@ -1,3 +1,12 @@
+# Pk-Next Lib
+
+4 Feb 2025
+
+A library to implement Single Repo Web Apps using NextJS, React 19+ Server Components, and pk-ts-libs FE, API, SQLITE, which also include pk-node & pk-common libs
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

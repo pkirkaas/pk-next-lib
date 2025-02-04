@@ -1,5 +1,50 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
+# Defaults - swap, logs, tmp, cache
+*.swp
+*.swo
+*.bak
+.env
+logs/
+log/
+*.log
+tmp/
+*.tmp
+cache/
+
+
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+
+# TypeScript/Node/NPM
+node_modules/
+# vite fe builds
+build/
+# testing
+/coverage
+# next.js
+/.next/
+/out/
+package-lock.json
+# DO NOT IGNORE `dist/` FOR TS LIB PACKAGES!
+dist/
+dist-ssr/
+*.local
+# vercel
+.vercel
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+
 # dependencies
 /node_modules
 /.pnp
