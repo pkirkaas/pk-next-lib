@@ -1,3 +1,7 @@
+/*
+ * Tailwind 4 when ready
+*/
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

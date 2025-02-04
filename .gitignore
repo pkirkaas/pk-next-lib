@@ -35,7 +35,6 @@ build/
 /out/
 package-lock.json
 # DO NOT IGNORE `dist/` FOR TS LIB PACKAGES!
-dist/
 dist-ssr/
 *.local
 # vercel
